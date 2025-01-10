@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: webhook-service
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+      exclude: static/**
+  ai:
+    ollama:
+      chat:
+        options:
+          model: qwen2.5-coder:latest
+        enabled: true
+      base-url: http://localhost:11434
+server:
+  port: 8090
+feishu:
+    app-id: cli_a7e41393f8b9500e
+    app-secret: cVVkoZNeIAfuhziap4buAeJIxIUG5sV8
